@@ -1,0 +1,312 @@
+    1  brew update
+    2  brew upgrade
+    3  ls
+    4  xcode-select --install
+    5  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    6  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/axile/.zprofile && eval "$(/opt/homebrew/bin/brew shellenv)"
+    7  ls
+    8  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+    9  nvm
+   10  ls -a
+   11  touch .zshrc
+   12  ls
+   13  ls -a
+   14  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+   15  source .zshrc
+   16  nvm 
+   17  clear
+   18  nvm install node 
+   19  nvm use node
+   20  npm -- version
+   21  ls -a
+   22  clear
+   23  nvm install --lts
+   24  nvm use --lts
+   25  node -v
+   26  nvm -v
+   27  npm -v
+   28  clear
+   29  clear
+   30  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   31  ls
+   32  pwd
+   33  ls
+   34  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+   35  clear
+   36  ls -a
+   37  nano .zshrc
+   38  CLEAR
+   39  source .zshrc
+   40  nano .zshrc
+   41  source .zshrc
+   42  nano .zshrc
+   43  source .zshrc
+   44  clear
+   45  ls
+   46  ping google.com
+   47  ls
+   48  ps
+   49  tree
+   50  brew install tree
+   51  ls
+   52  ps
+   53  pwd
+   54  ls
+   55  ps
+   56  ls
+   57  tree
+   58  clear
+   59  ps
+   60  clear
+   61  ls
+   62  cd Desktop
+   63  ls
+   64  mkdir Livrex
+   65  cd Livrex
+   66  npm init 
+   67  ls
+   68  tree
+   69  node .
+   70  code .
+   71  code.
+   72  clear
+   73  npm install typescript --save-dev
+   74  npx tsc --init
+   75  clear
+   76  cd src
+   77  tsc app.ts
+   78  clear
+   79  tsc app.ts
+   80  cd ..
+   81  ls
+   82  cd src
+   83  tsc app.ts
+   84  clear
+   85  tsc status
+   86  npm install typescript -g
+   87  clear
+   88  cd src
+   89  tsc app.ts
+   90  clear
+   91  tsc 
+   92  node ../dist/app.js
+   93  cd ../
+   94  history
+   95  history >history.txt
+   96  ls
+   97  clear
+   98  cd src 
+   99  tsc components/BookApi.ts
+  100  clear
+  101  tsc components/BookApi.ts
+  102  clear
+  103  tsc 
+  104  cd ..
+  105  node dist/components/BookApi.js
+  106  node ../dist/components/BookApi.js
+  107  node ../dist/interfaces/Book.js
+  108  clear
+  109  node ../dist/components/BookApi.js
+  110  npm cache clean --force
+  111  node ../dist/components/BookApi.js
+  112  npm install
+  113  node ../dist/components/BookApi.js
+  114  clear
+  115  npm start
+  116  clear
+  117  node ../dist/components/BookApi.js
+  118  clear
+  119  node ../dist/components/BookApi.js
+  120  clear
+  121  node ../dist/components/BookApi.js
+  122  clear
+  123  rm -rf node_module
+  124  npm install
+  125  node ../dist/components/BookApi.js
+  126  npm i
+  127  node ../dist/components/BookApi.js
+  128  clear
+  129  tsc components/BookApi.ts
+  130  cd src
+  131  tsc components/BookApi.ts
+  132  clear
+  133  tsc components/BookApi.ts
+  134  cd src
+  135  tsc components/BookApi.ts
+  136  clear
+  137  tsc components
+  138  tsc components/BookApi.ts
+  139  cd ..
+  140  npm install --save @types/es6-promise
+  141  tsc components/BookApi.ts
+  142  cd src
+  143  tsc components/BookApi.ts
+  144  node ../dist/components/BookApi.js
+  145  clear
+  146  node ../dist/components/BookApi.js
+  147  tsc components/BookApi.ts
+  148  node ../dist/components/BookApi.js
+  149  tsc components/BookApi.ts
+  150  clear
+  151  tsc components/ui.ts
+  152  tsc intefaces/index.ts
+  153  tsc interfaces/index.ts
+  154  ls
+  155  cd interfaces
+  156  ls
+  157  cd ..
+  158  tsc index.ts
+  159  node index.ts
+  160  node index.js
+  161  cd ..
+  162  ls
+  163  cd src
+  164  node index.js
+  165  tsc index.ts
+  166  ls
+  167  cd Desktop
+  168  ls
+  169  git clone https://github.com/tegmen88/bibliotheque-ts.git
+  170  ls
+  171  mkdir Bookx
+  172  ls
+  173  rmdir Bookx
+  174  ls
+  175  clear
+  176  ls
+  177  cd Desktop
+  178  ls
+  179  mkdir Bookxz
+  180  cd Bookxz
+  181  npm init
+  182  ls
+  183  npm i --save-dev typescript
+  184  npx tsc --init
+  185  npx tsc
+  186  ls
+  187  LS
+  188  SL
+  189  LS
+  190  cd src
+  191  npx tsc
+  192  tsc --outDir dist src/*.ts --module esnext --target es6\n
+  193  cd ..
+  194  tsc --outDir dist src/*.ts --module esnext --target es6\n
+  195  curl https://my-json-server.typicode.com/zocom-christoffer-wallenberg/books-api/books\n
+  196  clear
+  197  curl https://my-json-server.typicode.com/zocom-christoffer-wallenberg/books-api/books \n
+  198  clear
+  199  curl https://my-json-server.typicode.com/zocom-christoffer-wallenberg/books-api/books
+  200  cd src
+  201  npx tsc
+  202  cd ..
+  203  tsc --outDir dist src/*.ts --module esnext --target es6\n
+  204  node ../dist/app.js
+  205  clear
+  206  node /dist/app.js
+  207  node dist/app.js
+  208  clear
+  209  node app.js 
+  210  cd dist
+  211  clear
+  212  node app.js 
+  213  node book.js 
+  214  clear
+  215  cd ..
+  216  tsc --outDir dist src/*.ts --module esnext --target es6\n
+  217  clear
+  218  tsc --outDir dist src/*.ts --module esnext --target es6\n
+  219  clear
+  220  pwd
+  221  git init -b main
+  222  git add .
+  223  git remote add origin https://github.com/Axile24/Library.git
+  224  git remote -v
+  225  git push -u origin main
+  226  git fetch https://github.com/Axile24/Library.git
+  227  git push -u origin main
+  228  git push -u origin 
+  229  git push -u origin main
+  230  git push -f
+  231  git reset --hard origin
+  232  git push -f
+  233  git push -u origin 
+  234  clear
+  235  git push
+  236  git push --set-upstream origin master
+  237  git push -u origin master
+  238  git push -u origin --all
+  239  git config --global push.autoSetupRemote true
+  240  git psuh
+  241  git push
+  242  clear
+  243  git push -u origin master
+  244  git push 
+  245  git push origin main
+  246  git fetch origin
+  247  git push 
+  248  git push main
+  249  git push origin
+  250  git push origin main
+  251  git remote add origin https://github.com/Axile24/Library.git
+  252  git push origin master
+  253  git push 
+  254  git push -f origin master
+  255  git pull
+  256  git pull https://github.com/Axile24/Library.git 
+  257  git push -f origin master
+  258  git pull https://github.com/Axile24/Library.git ls -la
+  259  ls -al
+  260  rmdir .git
+  261  rmdir -f .git
+  262  rmdir --f .git
+  263  rmdir .git
+  264  rm -f .git
+  265  rmdir -f .git
+  266  rm --f .git
+  267  clear
+  268  ls 
+  269  tree
+  270  ls
+  271  cd .git
+  272  ls
+  273  cd ..
+  274  rm -rf .git
+  275  ls
+  276  cleaqr
+  277  clear
+  278  pwd
+  279  git init
+  280  git add *
+  281  git commit " first V of this work"
+  282  git commit -m " first V of this work"
+  283  clear
+  284  git repo create
+  285  gh repo create
+  286  git repo create 
+  287  git remote add origin https://github.com/Axile24/Bookz.git
+  288  git remote -v
+  289  git remote --set-upstream origin main
+  290  git push --set-upstream origin dev
+  291  git push --set-upstream origin main
+  292  git push -u origin main
+  293  git add origin https://github.com/Axile24/Bookz.git
+  294  ls -al
+  295  rm -rf .git
+  296  ls
+  297  cd ..
+  298  git clone https://github.com/Axile24/Livre.git
+  299  git status
+  300  git add *
+  301  git status
+  302  git commit -m" First Version "
+  303  git status
+  304  git add .
+  305  git status
+  306  git commit -m"Remote now
+  307  git commit -m "Remote now"
+  308  git config --global user.name "Axile24"
+  309  git config --global user.email "amokrane.n@icloud.com"
+  310  git push
+  311  git status
+  312  history
