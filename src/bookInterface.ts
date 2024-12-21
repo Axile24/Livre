@@ -7,6 +7,7 @@ export interface Book{
     price: number;
     pages: number;
     plot: string ;
-    audience : number | string
+    audience: number | string
+    color: string;
 
 }

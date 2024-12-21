@@ -1,4 +1,4 @@
-const bookColors = [
+/*const bookColors: string[] = [
     '#f9c74f', // Yellow
     '#f8961e', // Orange
     '#f3722c', // Red
@@ -7,24 +7,24 @@ const bookColors = [
     '#577590', // Dark Blue
     '#43aa8b', // Green
     '#90be6d', // Light Green
-];
+];*/
 // Render the grid of books
 export function renderBooks(books, onBookClick) {
     const bookGrid = document.getElementById('bookGrid');
     bookGrid.innerHTML = ''; // Clear the grid
-    books.forEach((book, index) => {
+    books.forEach((book) => {
         const bookCard = document.createElement('div');
         bookCard.className = 'book-card';
-        const color = bookColors[index % bookColors.length];
-        bookCard.style.backgroundColor = color;
+        /*const color = bookColors[index % bookColors.length];*/
+        bookCard.style.backgroundColor = book.color;
         bookCard.innerHTML = `
       <h2>${book.title}</h2>
       <p>${book.author}</p>
       <p>${book.pages}</p>
       <p>${book.year}</p>
-
-
+    
     `;
+        // <p>${book.color}</p>
         // Add a click listener to show details
         bookCard.addEventListener('click', () => onBookClick(book));
         bookGrid.appendChild(bookCard);
@@ -34,6 +34,9 @@ export function renderBooks(books, onBookClick) {
 export function showBookDetails(book) {
     const bookDetails = document.getElementById('bookDetails');
     const bookGrid = document.getElementById('bookGrid');
+    /* const color = bookColors[index % bookColors.length];*/
+    bookDetails.style.backgroundColor = book.color;
+    console.log(book.color);
     document.getElementById('bookTitle').innerText = book.title;
     document.getElementById('bookAuthor').innerText = `By ${book.author}`;
     document.getElementById('bookDescription').innerText = book.plot || 'No description available.';
@@ -46,13 +49,9 @@ export function showBookDetails(book) {
     bookDetails.classList.add('active');
 }
 //****************************** */
-function updateBookGridColors() {
-    const bookCards = document.querySelectorAll('.book-details ');
-    bookCards.forEach((card, index) => {
-        const color = bookColors[index % bookColors.length];
-        card.style.backgroundColor = color;
-    });
-}
+const onBookClick = (book) => {
+    showBookDetails(book);
+};
 // Hide book details
 export function hideBookDetails() {
     const bookDetails = document.getElementById('bookDetails');

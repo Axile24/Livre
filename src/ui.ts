@@ -1,9 +1,7 @@
-import { Book } from './bookInterface';
+import { Book } from "./bookInterface";
 
 
-
-
-const bookColors: string[] = [
+/*const bookColors: string[] = [
     '#f9c74f', // Yellow
     '#f8961e', // Orange
     '#f3722c', // Red
@@ -12,8 +10,7 @@ const bookColors: string[] = [
     '#577590', // Dark Blue
     '#43aa8b', // Green
     '#90be6d', // Light Green
-];
-
+];*/
 
 
 // Render the grid of books
@@ -21,22 +18,21 @@ export function renderBooks(books: Book[], onBookClick: (book: Book) => void): v
     const bookGrid = document.getElementById('bookGrid') as HTMLElement;
     bookGrid.innerHTML = ''; // Clear the grid
 
-    books.forEach((book, index) => {
+    books.forEach((book) => {
         const bookCard = document.createElement('div');
         bookCard.className = 'book-card';
 
-        const color = bookColors[index % bookColors.length];
-        bookCard.style.backgroundColor = color;
+        /*const color = bookColors[index % bookColors.length];*/
+        bookCard.style.backgroundColor = book.color;
 
         bookCard.innerHTML = `
       <h2>${book.title}</h2>
       <p>${book.author}</p>
       <p>${book.pages}</p>
       <p>${book.year}</p>
-
-
+    
     `;
-
+        // <p>${book.color}</p>
         // Add a click listener to show details
         bookCard.addEventListener('click', () => onBookClick(book));
 
@@ -48,6 +44,11 @@ export function renderBooks(books: Book[], onBookClick: (book: Book) => void): v
 export function showBookDetails(book: Book): void {
     const bookDetails = document.getElementById('bookDetails') as HTMLElement;
     const bookGrid = document.getElementById('bookGrid') as HTMLElement;
+
+   /* const color = bookColors[index % bookColors.length];*/
+    bookDetails.style.backgroundColor = book.color;
+    console.log(book.color);
+    
 
     (document.getElementById('bookTitle') as HTMLElement).innerText = book.title;
     (document.getElementById('bookAuthor') as HTMLElement).innerText = `By ${book.author}`;
@@ -64,14 +65,10 @@ export function showBookDetails(book: Book): void {
     bookDetails.classList.add('active');
 }
 //****************************** */
-function updateBookGridColors(): void {
-    const bookCards = document.querySelectorAll('.book-details ');
-    bookCards.forEach((card, index) => {
-        const color = bookColors[index % bookColors.length];
-        (card as HTMLElement).style.backgroundColor = color;
-    });
-}
 
+const onBookClick = (book: Book) => {
+    showBookDetails(book);
+};
 
 
 // Hide book details
