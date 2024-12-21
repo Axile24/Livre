@@ -1,0 +1,14 @@
+{
+  "name": "bookxz",
+  "version": "1.0.0",
+  "description": "Examination TYPSCRIPT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nadjib Amokrane",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
