@@ -24,18 +24,15 @@ export function renderBooks(books: Book[], onBookClick: (book: Book) => void): v
 
         /*const color = bookColors[index % bookColors.length];*/
         bookCard.style.backgroundColor = book.color;
-
         bookCard.innerHTML = `
       <h2>${book.title}</h2>
-      <p>${book.author}</p>
-      <p>${book.pages}</p>
-      <p>${book.year}</p>
-    
+      <p>Author: ${book.author}</p>
+      <p>Audience: ${book.audience}</p>
+      <p>Year published:   ${book.year}</p>
     `;
         // <p>${book.color}</p>
         // Add a click listener to show details
         bookCard.addEventListener('click', () => onBookClick(book));
-
         bookGrid.appendChild(bookCard);
     });
 }
@@ -52,11 +49,12 @@ export function showBookDetails(book: Book): void {
 
     (document.getElementById('bookTitle') as HTMLElement).innerText = book.title;
     (document.getElementById('bookAuthor') as HTMLElement).innerText = `By ${book.author}`;
-
     (document.getElementById('bookDescription') as HTMLElement).innerText = book.plot || 'No description available.';
     (document.getElementById('bookAdditionalInfo') as HTMLElement).innerHTML = `
     <strong>Price:</strong> ${book.price || 'N/A'} SEK<br>
     <strong>Pages:</strong> ${book.pages || 'N/A'}
+    <br><br>
+    <button>Oh i want to read this</button> 
   `;
     
 
@@ -64,7 +62,6 @@ export function showBookDetails(book: Book): void {
     bookGrid.style.display = 'none';
     bookDetails.classList.add('active');
 }
-//****************************** */
 
 const onBookClick = (book: Book) => {
     showBookDetails(book);

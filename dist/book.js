@@ -9,9 +9,21 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 export function fetchBooks() {
     return __awaiter(this, void 0, void 0, function* () {
-        const res = yield fetch('https://my-json-server.typicode.com/zocom-christoffer-wallenberg/books-api/books');
-        const books = yield res.json();
-        console.log(books);
-        return books;
+        const URL = 'https://my-json-server.typicode.com/zocom-christoffer-wallenberg/books-api/books';
+        try {
+            const res = yield fetch(URL);
+            if (!res.ok) {
+                throw new Error(`Response status: ${res.status}`);
+            }
+            const books = yield res.json();
+            console.log(books);
+            return books;
+        }
+        catch (error) {
+            if (error instanceof Error) {
+                console.log(error.message);
+            }
+            return []; // solution to  Function lacks ending return statement and return type does not include 'undefined'.
+        }
     });
 }

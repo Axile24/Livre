@@ -19,10 +19,9 @@ export function renderBooks(books, onBookClick) {
         bookCard.style.backgroundColor = book.color;
         bookCard.innerHTML = `
       <h2>${book.title}</h2>
-      <p>${book.author}</p>
-      <p>${book.pages}</p>
-      <p>${book.year}</p>
-    
+      <p>Author: ${book.author}</p>
+      <p>Audience: ${book.audience}</p>
+      <p>Year published:   ${book.year}</p>
     `;
         // <p>${book.color}</p>
         // Add a click listener to show details
@@ -43,12 +42,13 @@ export function showBookDetails(book) {
     document.getElementById('bookAdditionalInfo').innerHTML = `
     <strong>Price:</strong> ${book.price || 'N/A'} SEK<br>
     <strong>Pages:</strong> ${book.pages || 'N/A'}
+    <br><br>
+    <button>Oh i want to read this</button> 
   `;
     // Show details and hide grid
     bookGrid.style.display = 'none';
     bookDetails.classList.add('active');
 }
-//****************************** */
 const onBookClick = (book) => {
     showBookDetails(book);
 };
