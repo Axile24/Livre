@@ -15,6 +15,7 @@ export async function fetchBooks(): Promise<Book[]> {
         }
         const books: Book[] = await res.json();
         console.log(books);
+        
         return books;
     } catch (error) {
         if (error instanceof Error) {
