@@ -51,7 +51,7 @@ export function showBookDetails(book: Book): void {
     (document.getElementById('bookAuthor') as HTMLElement).innerText = `By ${book.author}`;
     (document.getElementById('bookDescription') as HTMLElement).innerText = book.plot || 'No description available.';
     (document.getElementById('bookAdditionalInfo') as HTMLElement).innerHTML = `
-    <strong>Price:</strong> ${book.price || 'N/A'} SEK<br>
+    <strong>Publisher:</strong> ${book.publisher|| 'N/A'} SEK<br>
     <strong>Pages:</strong> ${book.pages || 'N/A'}
     <br><br>
     <button>Oh i want to read this</button> 

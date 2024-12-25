@@ -4,7 +4,7 @@ export interface Book{
     author: string ;
     description: string;
     year: number ; 
-    price: number;
+    publisher: string;
     pages: number;
     plot: string ;
     audience: number | string
